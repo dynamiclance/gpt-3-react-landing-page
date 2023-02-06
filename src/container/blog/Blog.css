@@ -1,0 +1,114 @@
+
+
+.gpt3__blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.gpt3__blog-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__blog-header {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.gpt3__blog-header h2 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.gpt3__blog-container_groupA {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.gpt3__blog-container_groupB {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.gpt3__blog-container_article {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background: var(--color-footer);
+}
+
+.gpt3__blog-container_article-img {
+    width: 100%;
+    height: 100%;
+    background: var(--color-footer);
+}
+
+.gpt3__blog-container_article-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.gpt3__blog-container__article-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 100%;
+}
+
+
+.gpt3__blog-container__article-content p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 11.649px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.gpt3__blog-container__article-content p:last-child {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.gpt3__blog-container__article-content h2 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 25.11px;
+    line-height: 30px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__blog-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .gpt3__blog-container_groupA {
+        margin-right: 0rem;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .gpt3__blog-container {
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .gpt3__blog-container_groupA {
+        margin-right: 0rem;
+    }
+}
